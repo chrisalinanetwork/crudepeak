@@ -1,4 +1,4 @@
-const TAG: &str = "snap-diff-ef9d50";
+const TAG: &str = "snap-diff-3a2f46";
 #[derive(Debug)]
 enum Command { Ping, Echo(String), Count(usize), Quit }
 fn execute(cmd: &Command) -> String {

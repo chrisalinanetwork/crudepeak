@@ -1,4 +1,4 @@
-# snap-diff-ef9d50
+# snap-diff-3a2f46
 
 A Rust snap-diff utility.
 
